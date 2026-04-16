@@ -25,30 +25,26 @@
         </div>
 
         <nav class="flex-1 space-y-4">
-            <a href="#" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
-                <i class="fas fa-book-open w-5"></i> <span class="text-sm">Introduction</span>
+            <a href="index.html" class="flex items-center gap-3 text-blue-600 bg-blue-50 -mx-6 px-6 py-2 border-r-4 border-blue-600">
+                <i class="fas fa-th-large w-5"></i> <span class="text-sm font-semibold">Dashboard</span>
             </a>
-            <a href="#" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
-                <i class="fas fa- ruler-combined w-5"></i> <span class="text-sm">Lines & Planes</span>
+            <a href="editor.html" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
+                <i class="fas fa-pencil-ruler w-5"></i> <span class="text-sm">Drafting Table</span>
             </a>
-            <a href="#" class="flex items-center gap-3 text-blue-600 bg-blue-50 -mx-6 px-6 py-2 border-r-4 border-blue-600">
-                <i class="fas fa-cube w-5"></i> <span class="text-sm font-semibold">Solid Geometry</span>
+            <a href="profile.html" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
+                <i class="fas fa-user w-5"></i> <span class="text-sm">Profile</span>
             </a>
-            <a href="#" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
-                <i class="fas fa-layer-group w-5"></i> <span class="text-sm">Sections</span>
-            </a>
-            <a href="#" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
-                <i class="fas fa- dice-d6 w-5"></i> <span class="text-sm">Isometric Views</span>
+            <a href="settings.html" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
+                <i class="fas fa-cog w-5"></i> <span class="text-sm">Settings</span>
             </a>
         </nav>
 
         <div class="mt-auto space-y-4">
-            <button class="w-full bg-blue-900 text-white py-3 rounded-xl shadow-lg shadow-blue-200 flex items-center justify-center gap-2 text-sm">
+            <a href="editor.html" class="w-full bg-blue-900 text-white py-3 rounded-xl shadow-lg shadow-blue-200 flex items-center justify-center gap-2 text-sm">
                 <span>+</span> Start New Drawing
-            </button>
+            </a>
             <div class="pt-6 border-t border-gray-100 space-y-3">
-                <a href="#" class="flex items-center gap-2 text-xs text-gray-400 hover:text-gray-600"><i class="fas fa-question-circle"></i> Help Center</a>
-                <a href="#" class="flex items-center gap-2 text-xs text-gray-400 hover:text-gray-600"><i class="fas fa-file-alt"></i> Documentation</a>
+                <a href="login.html" class="flex items-center gap-2 text-xs text-red-400 hover:text-red-600"><i class="fas fa-sign-out-alt"></i> Logout</a>
             </div>
         </div>
     </aside>
@@ -56,9 +52,9 @@
     <main class="flex-1 p-8">
         <header class="flex justify-between items-center mb-10">
             <div class="flex gap-8 text-sm font-medium text-gray-400">
-                <a href="#" class="text-blue-900 border-b-2 border-blue-900 pb-1">Dashboard</a>
+                <a href="index.html" class="text-blue-900 border-b-2 border-blue-900 pb-1">Dashboard</a>
                 <a href="#" class="hover:text-blue-900">Gallery</a>
-                <a href="#" class="hover:text-blue-900">Grades</a>
+                <a href="plans.html" class="hover:text-blue-900">Plans</a>
             </div>
             
             <div class="flex items-center gap-6">
@@ -68,9 +64,11 @@
                 </div>
                 <div class="flex gap-4 text-gray-500">
                     <i class="far fa-bell cursor-pointer"></i>
-                    <i class="fas fa-cog cursor-pointer"></i>
+                    <a href="settings.html"><i class="fas fa-cog cursor-pointer hover:text-blue-900"></i></a>
                 </div>
-                <img src="https://ui-avatars.com/api/?name=Alex+Doe&background=random" class="w-10 h-10 rounded-xl border-2 border-orange-200">
+                <a href="profile.html">
+                    <img src="https://ui-avatars.com/api/?name=Alex+Doe&background=random" class="w-10 h-10 rounded-xl border-2 border-orange-200 hover:border-blue-900 transition">
+                </a>
             </div>
         </header>
 
@@ -79,13 +77,13 @@
                 <h2 class="text-4xl font-bold text-gray-800 mb-2">Welcome back, Alex.</h2>
                 <p class="text-gray-500">Continue your journey into <span class="text-blue-700 font-semibold">Solid Geometry</span>. You have completed 64% of the current module.</p>
             </div>
-            <button class="bg-blue-800 text-white px-6 py-4 rounded-2xl shadow-xl flex items-center gap-4 hover:bg-blue-900 transition">
+            <a href="editor.html" class="bg-blue-800 text-white px-6 py-4 rounded-2xl shadow-xl flex items-center gap-4 hover:bg-blue-900 transition">
                 <div class="text-left">
                     <p class="text-[10px] opacity-70 uppercase tracking-tighter">Quick Start</p>
                     <p class="font-bold">Resume Drafting</p>
                 </div>
                 <i class="fas fa-play-circle text-2xl"></i>
-            </button>
+            </a>
         </div>
 
         <div class="grid grid-cols-3 gap-6 mb-10">
@@ -136,7 +134,7 @@
             <div class="col-span-2 bg-gray-100/50 p-8 rounded-[2.5rem]">
                 <div class="flex justify-between items-center mb-6">
                     <h3 class="text-2xl font-bold text-gray-800">Recent Activity</h3>
-                    <a href="#" class="text-blue-800 font-bold text-sm">View History</a>
+                    <a href="profile.html" class="text-blue-800 font-bold text-sm">View History</a>
                 </div>
                 <div class="space-y-6">
                     <div class="flex justify-between items-center">
@@ -149,16 +147,6 @@
                         </div>
                         <span class="text-[10px] text-gray-400 uppercase font-bold">2 Hours Ago</span>
                     </div>
-                    <div class="flex justify-between items-center">
-                        <div class="flex gap-4">
-                            <div class="w-1 bg-blue-800 rounded-full"></div>
-                            <div>
-                                <p class="font-bold text-gray-800">Video: Perspective of Curves</p>
-                                <p class="text-xs text-gray-500">Watched 12 minutes of instructional content from Chapter 4.</p>
-                            </div>
-                        </div>
-                        <span class="text-[10px] text-gray-400 uppercase font-bold">Yesterday</span>
-                    </div>
                 </div>
             </div>
 
@@ -168,10 +156,6 @@
                     <div class="bg-[#3D3D3D] p-4 rounded-2xl">
                         <p class="text-[10px] text-gray-400 uppercase font-bold mb-1">In 2 Days</p>
                         <p class="font-semibold text-sm">Solid Truncation Submission</p>
-                    </div>
-                    <div class="bg-[#3D3D3D] p-4 rounded-2xl">
-                        <p class="text-[10px] text-gray-400 uppercase font-bold mb-1">Dec 12</p>
-                        <p class="font-semibold text-sm">Mid-Term Portfolio Review</p>
                     </div>
                 </div>
                 <button class="mt-auto bg-white text-black py-3 rounded-xl font-bold text-sm">Calendar</button>
