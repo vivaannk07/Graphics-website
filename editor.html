@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Drafting Table | Blueprint Precision</title>
+    <style>
+        .blueprint-grid {
+            background-color: #F8FAFC;
+            background-image: linear-gradient(#E2E8F0 1px, transparent 1px), linear-gradient(90deg, #E2E8F0 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="flex h-screen overflow-hidden">
+    <aside class="w-64 bg-white border-r border-gray-100 flex flex-col p-6">
+        <h1 class="text-blue-900 font-bold text-xl mb-10">Engineering Graphics</h1>
+        <div class="space-y-6">
+            <div>
+                <p class="text-[10px] text-gray-400 font-bold uppercase mb-4 tracking-widest">Course Modules</p>
+                <nav class="space-y-3">
+                    <a href="#" class="flex items-center gap-3 text-gray-500 text-sm"><i class="fas fa-info-circle w-5"></i> Introduction</a>
+                    <a href="#" class="flex items-center gap-3 text-gray-500 text-sm"><i class="fas fa-drafting-compass w-5"></i> Lines & Planes</a>
+                    <a href="#" class="flex items-center gap-3 text-gray-500 text-sm"><i class="fas fa-cube w-5"></i> Solid Geometry</a>
+                    <a href="#" class="flex items-center gap-3 text-blue-600 bg-blue-50 -mx-6 px-6 py-2 border-r-4 border-blue-600 font-medium text-sm">
+                        <i class="fas fa-vector-square w-5"></i> Isometric Views
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </aside>
+
+    <main class="flex-1 flex flex-col relative blueprint-grid">
+        <header class="h-16 bg-white/80 backdrop-blur-md flex items-center justify-between px-8 border-b border-gray-100">
+            <div class="flex gap-4 text-xs font-bold uppercase tracking-tighter items-center">
+                <span class="text-gray-400">Modules ></span>
+                <span class="text-blue-900">Isometric Projections</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="flex bg-gray-100 p-1 rounded-lg">
+                    <button class="bg-white shadow-sm px-4 py-1.5 rounded-md text-xs font-bold flex items-center gap-2"><i class="fas fa-pen text-blue-900"></i> Line Tool</button>
+                    <button class="px-4 py-1.5 text-xs text-gray-400 font-bold">Ellipse</button>
+                </div>
+                <button class="bg-orange-800 text-white px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-2">
+                    <i class="fas fa-check-circle"></i> Finish Block
+                </button>
+            </div>
+        </header>
+
+        <div class="flex-1 relative flex items-center justify-center p-12">
+            <div class="relative w-96 h-96">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <svg viewBox="0 0 200 200" class="w-full h-full text-blue-400/50">
+                        <path d="M100 30 L160 65 L160 135 L100 170 L40 135 L40 65 Z" fill="rgba(147, 197, 253, 0.3)" stroke="currentColor" stroke-width="1"/>
+                        <path d="M100 30 L100 100 L160 135 M100 100 L40 135" stroke="currentColor" stroke-width="1" fill="none"/>
+                    </svg>
+                </div>
+                <div class="absolute top-1/4 right-1/4 bg-white shadow-xl p-2 rounded-lg border border-gray-100">
+                    <p class="text-[8px] text-gray-400 font-bold uppercase">Cursor Pos</p>
+                    <p class="text-xs font-bold text-blue-900 leading-tight">X: 140.0 | Y: 80.0</p>
+                    <p class="text-[8px] text-orange-600 font-bold">30° Snapped</p>
+                </div>
+            </div>
+
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-xl border border-gray-100 shadow-2xl rounded-[2rem] p-2 flex items-center gap-8 px-8">
+                <button class="flex flex-col items-center gap-1 group">
+                    <div class="bg-orange-100 p-3 rounded-xl text-orange-600 group-hover:bg-orange-200 transition"><i class="fas fa-th"></i></div>
+                    <span class="text-[8px] font-bold uppercase text-gray-400">Grid</span>
+                </button>
+                <button class="flex flex-col items-center gap-1 group">
+                    <div class="p-3 text-gray-400 group-hover:text-blue-900 transition"><i class="fas fa-location-arrow"></i></div>
+                    <span class="text-[8px] font-bold uppercase text-gray-400">Snap</span>
+                </button>
+                <button class="flex flex-col items-center gap-1 group">
+                    <div class="p-3 text-gray-400 group-hover:text-blue-900 transition"><i class="fas fa-keyboard"></i></div>
+                    <span class="text-[8px] font-bold uppercase text-gray-400">Ortho</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <aside class="w-80 bg-gray-50/50 border-l border-gray-100 p-6 flex flex-col">
+        <div class="flex items-center gap-3 mb-8">
+            <div class="bg-blue-900 text-white w-10 h-10 rounded-xl flex items-center justify-center shadow-lg shadow-blue-200"><i class="fas fa-robot"></i></div>
+            <div>
+                <h4 class="text-sm font-bold text-gray-800">Study Partner</h4>
+                <p class="text-[10px] text-gray-400 font-bold uppercase">AI Drafting Assistant</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 mb-6">
+            <p class="text-[10px] text-blue-600 font-bold uppercase mb-2">Current Task</p>
+            <p class="text-xs text-gray-600 leading-relaxed font-medium">Convert the provided Front and Top views of the "Stepped Block" into an Isometric projection.</p>
+        </div>
+
+        <div class="bg-blue-50/50 border border-blue-100 p-5 rounded-2xl">
+            <p class="text-[10px] text-blue-900 font-bold uppercase mb-3 flex items-center gap-2">
+                <i class="fas fa-lightbulb"></i> Drafting Tip
+            </p>
+            <ol class="text-[11px] text-blue-900/80 space-y-3 font-medium">
+                <li>1. Always start from the <span class="font-bold">lowest common corner</span> (Origin).</li>
+                <li>2. Map the width to the 30° left axis.</li>
+            </ol>
+        </div>
+
+        <div class="mt-auto relative">
+            <input type="text" placeholder="Ask about step projection..." class="w-full bg-white border border-gray-100 rounded-2xl py-4 pl-4 pr-12 text-xs shadow-inner">
+            <button class="absolute right-2 top-2 bg-blue-900 text-white w-8 h-8 rounded-xl flex items-center justify-center"><i class="fas fa-paper-plane text-xs"></i></button>
+        </div>
+    </aside>
+</body>
+</html>

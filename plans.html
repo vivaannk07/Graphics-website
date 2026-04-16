@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Plans | Blueprint Precision</title>
+</head>
+<body class="bg-slate-50 flex min-h-screen">
+    <aside class="w-64 bg-white border-r border-gray-100 flex flex-col p-6">
+        <h1 class="text-blue-900 font-bold text-xl mb-10">Engineering Graphics</h1>
+        <nav class="flex-1 space-y-4">
+            <a href="index.html" class="flex items-center gap-3 text-gray-400 hover:text-blue-600 transition">
+                <i class="fas fa-th-large w-5"></i> <span class="text-sm">Dashboard</span>
+            </a>
+            <a href="editor.html" class="flex items-center gap-3 text-gray-400 hover:text-blue-600 transition">
+                <i class="fas fa-pencil-ruler w-5"></i> <span class="text-sm">Drafting Table</span>
+            </a>
+            <a href="profile.html" class="flex items-center gap-3 text-gray-400 hover:text-blue-600 transition">
+                <i class="fas fa-user w-5"></i> <span class="text-sm">Profile</span>
+            </a>
+        </nav>
+    </aside>
+
+    <main class="flex-1 p-16">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-black text-blue-900 mb-4">Choose Your Precision</h2>
+            <p class="text-slate-400 font-medium">Select a plan to unlock advanced AI rendering.</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100">
+                <h3 class="text-xl font-bold text-slate-800 mb-8">Starter</h3>
+                <span class="text-5xl font-black text-blue-900">$0</span>
+                <button class="w-full mt-10 py-4 rounded-2xl border-2 border-blue-900 text-blue-900 font-bold">Current Plan</button>
+            </div>
+            <div class="bg-blue-900 p-10 rounded-[3rem] shadow-2xl text-white transform scale-105">
+                <h3 class="text-xl font-bold mb-8">Pro Draftsman</h3>
+                <span class="text-5xl font-black">$19</span>
+                <button class="w-full mt-10 py-4 rounded-2xl bg-white text-blue-900 font-bold">Upgrade Now</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

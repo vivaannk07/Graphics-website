@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Graphics Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; }
+    </style>
+</head>
+<body class="flex min-h-screen">
+
+    <aside class="w-64 bg-white border-r border-gray-100 flex flex-col p-6">
+        <h1 class="text-blue-900 font-bold text-xl mb-10">Engineering Graphics</h1>
+        
+        <div class="mb-8">
+            <div class="flex items-center gap-3 bg-blue-900 text-white p-2 rounded-md mb-2">
+                <i class="fas fa-layer-group text-xs"></i>
+                <span class="text-sm font-medium">Curriculum</span>
+            </div>
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest ml-1">Precision Ledger V1.0</p>
+        </div>
+
+        <nav class="flex-1 space-y-4">
+            <a href="#" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
+                <i class="fas fa-book-open w-5"></i> <span class="text-sm">Introduction</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
+                <i class="fas fa- ruler-combined w-5"></i> <span class="text-sm">Lines & Planes</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 text-blue-600 bg-blue-50 -mx-6 px-6 py-2 border-r-4 border-blue-600">
+                <i class="fas fa-cube w-5"></i> <span class="text-sm font-semibold">Solid Geometry</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
+                <i class="fas fa-layer-group w-5"></i> <span class="text-sm">Sections</span>
+            </a>
+            <a href="#" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
+                <i class="fas fa- dice-d6 w-5"></i> <span class="text-sm">Isometric Views</span>
+            </a>
+        </nav>
+
+        <div class="mt-auto space-y-4">
+            <button class="w-full bg-blue-900 text-white py-3 rounded-xl shadow-lg shadow-blue-200 flex items-center justify-center gap-2 text-sm">
+                <span>+</span> Start New Drawing
+            </button>
+            <div class="pt-6 border-t border-gray-100 space-y-3">
+                <a href="#" class="flex items-center gap-2 text-xs text-gray-400 hover:text-gray-600"><i class="fas fa-question-circle"></i> Help Center</a>
+                <a href="#" class="flex items-center gap-2 text-xs text-gray-400 hover:text-gray-600"><i class="fas fa-file-alt"></i> Documentation</a>
+            </div>
+        </div>
+    </aside>
+
+    <main class="flex-1 p-8">
+        <header class="flex justify-between items-center mb-10">
+            <div class="flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#" class="text-blue-900 border-b-2 border-blue-900 pb-1">Dashboard</a>
+                <a href="#" class="hover:text-blue-900">Gallery</a>
+                <a href="#" class="hover:text-blue-900">Grades</a>
+            </div>
+            
+            <div class="flex items-center gap-6">
+                <div class="relative">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400 text-xs"></i>
+                    <input type="text" placeholder="Search curriculum..." class="bg-gray-100 rounded-lg py-2 pl-10 pr-4 text-sm w-64 focus:outline-none">
+                </div>
+                <div class="flex gap-4 text-gray-500">
+                    <i class="far fa-bell cursor-pointer"></i>
+                    <i class="fas fa-cog cursor-pointer"></i>
+                </div>
+                <img src="https://ui-avatars.com/api/?name=Alex+Doe&background=random" class="w-10 h-10 rounded-xl border-2 border-orange-200">
+            </div>
+        </header>
+
+        <div class="flex justify-between items-start mb-10">
+            <div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-2">Welcome back, Alex.</h2>
+                <p class="text-gray-500">Continue your journey into <span class="text-blue-700 font-semibold">Solid Geometry</span>. You have completed 64% of the current module.</p>
+            </div>
+            <button class="bg-blue-800 text-white px-6 py-4 rounded-2xl shadow-xl flex items-center gap-4 hover:bg-blue-900 transition">
+                <div class="text-left">
+                    <p class="text-[10px] opacity-70 uppercase tracking-tighter">Quick Start</p>
+                    <p class="font-bold">Resume Drafting</p>
+                </div>
+                <i class="fas fa-play-circle text-2xl"></i>
+            </button>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6 mb-10">
+            <div class="bg-white p-6 rounded-[2rem] shadow-sm border border-gray-50">
+                <div class="bg-gray-100 w-10 h-10 rounded-lg flex items-center justify-center mb-8"><i class="fas fa-bars-staggered text-blue-900"></i></div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Projection of Lines</h3>
+                <p class="text-xs text-gray-400 mb-6 leading-relaxed">Master 1st and 3rd angle projections.</p>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <p class="text-[10px] font-bold text-blue-800 uppercase mb-1">Completed</p>
+                        <div class="w-40 h-1.5 bg-blue-800 rounded-full"></div>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">100%</span>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-[2rem] shadow-sm border border-gray-50">
+                <div class="bg-gray-100 w-10 h-10 rounded-lg flex items-center justify-center mb-8"><i class="fas fa-layer-group text-blue-900"></i></div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Planes</h3>
+                <p class="text-xs text-gray-400 mb-6 leading-relaxed">Auxiliary planes and trace determination.</p>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <p class="text-[10px] font-bold text-gray-400 uppercase mb-1 font-semibold">In Progress</p>
+                        <div class="w-40 h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                            <div class="w-[42%] h-full bg-slate-600"></div>
+                        </div>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">42%</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-[2rem] shadow-sm border border-gray-50">
+                <div class="bg-blue-600 w-10 h-10 rounded-lg flex items-center justify-center mb-8"><i class="fas fa-expand text-white"></i></div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Solid Geometry</h3>
+                <p class="text-xs text-gray-400 mb-6 leading-relaxed">Frustums, prisms, and pyramid sections.</p>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <p class="text-[10px] font-bold text-orange-800 uppercase mb-1">Current Focus</p>
+                        <div class="w-40 h-1.5 bg-orange-100 rounded-full overflow-hidden">
+                            <div class="w-[64%] h-full bg-orange-800"></div>
+                        </div>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">64%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+            <div class="col-span-2 bg-gray-100/50 p-8 rounded-[2.5rem]">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Recent Activity</h3>
+                    <a href="#" class="text-blue-800 font-bold text-sm">View History</a>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-4">
+                            <div class="w-1 bg-orange-800 rounded-full"></div>
+                            <div>
+                                <p class="font-bold text-gray-800">Complex Hexagonal Prism</p>
+                                <p class="text-xs text-gray-500">Submitted Sectional View Drawing. Precision score: 98%.</p>
+                            </div>
+                        </div>
+                        <span class="text-[10px] text-gray-400 uppercase font-bold">2 Hours Ago</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-4">
+                            <div class="w-1 bg-blue-800 rounded-full"></div>
+                            <div>
+                                <p class="font-bold text-gray-800">Video: Perspective of Curves</p>
+                                <p class="text-xs text-gray-500">Watched 12 minutes of instructional content from Chapter 4.</p>
+                            </div>
+                        </div>
+                        <span class="text-[10px] text-gray-400 uppercase font-bold">Yesterday</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#2D2D2D] p-8 rounded-[2.5rem] text-white flex flex-col">
+                <h3 class="text-2xl font-bold mb-6">Deadlines</h3>
+                <div class="space-y-4 mb-8">
+                    <div class="bg-[#3D3D3D] p-4 rounded-2xl">
+                        <p class="text-[10px] text-gray-400 uppercase font-bold mb-1">In 2 Days</p>
+                        <p class="font-semibold text-sm">Solid Truncation Submission</p>
+                    </div>
+                    <div class="bg-[#3D3D3D] p-4 rounded-2xl">
+                        <p class="text-[10px] text-gray-400 uppercase font-bold mb-1">Dec 12</p>
+                        <p class="font-semibold text-sm">Mid-Term Portfolio Review</p>
+                    </div>
+                </div>
+                <button class="mt-auto bg-white text-black py-3 rounded-xl font-bold text-sm">Calendar</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
