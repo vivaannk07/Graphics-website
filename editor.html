@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <title>Drafting Table | Blueprint Precision</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
         .blueprint-grid {
             background-color: #F8FAFC;
             background-image: linear-gradient(#E2E8F0 1px, transparent 1px), linear-gradient(90deg, #E2E8F0 1px, transparent 1px);
@@ -13,37 +17,48 @@
     </style>
 </head>
 <body class="flex h-screen overflow-hidden">
+    
     <aside class="w-64 bg-white border-r border-gray-100 flex flex-col p-6">
         <h1 class="text-blue-900 font-bold text-xl mb-10">Engineering Graphics</h1>
-        <div class="space-y-6">
-            <div>
-                <p class="text-[10px] text-gray-400 font-bold uppercase mb-4 tracking-widest">Course Modules</p>
-                <nav class="space-y-3">
-                    <a href="#" class="flex items-center gap-3 text-gray-500 text-sm"><i class="fas fa-info-circle w-5"></i> Introduction</a>
-                    <a href="#" class="flex items-center gap-3 text-gray-500 text-sm"><i class="fas fa-drafting-compass w-5"></i> Lines & Planes</a>
-                    <a href="#" class="flex items-center gap-3 text-gray-500 text-sm"><i class="fas fa-cube w-5"></i> Solid Geometry</a>
-                    <a href="#" class="flex items-center gap-3 text-blue-600 bg-blue-50 -mx-6 px-6 py-2 border-r-4 border-blue-600 font-medium text-sm">
-                        <i class="fas fa-vector-square w-5"></i> Isometric Views
-                    </a>
-                </nav>
-            </div>
+        
+        <nav class="flex-1 space-y-4">
+            <a href="index.html" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
+                <i class="fas fa-th-large w-5"></i> <span class="text-sm">Dashboard</span>
+            </a>
+            <a href="editor.html" class="flex items-center gap-3 text-blue-600 bg-blue-50 -mx-6 px-6 py-2 border-r-4 border-blue-600">
+                <i class="fas fa-pencil-ruler w-5"></i> <span class="text-sm font-semibold">Drafting Table</span>
+            </a>
+            <a href="profile.html" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
+                <i class="fas fa-user w-5"></i> <span class="text-sm">Profile</span>
+            </a>
+            <a href="settings.html" class="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition">
+                <i class="fas fa-cog w-5"></i> <span class="text-sm">Settings</span>
+            </a>
+        </nav>
+
+        <div class="mt-auto pt-6 border-t border-gray-100">
+            <a href="login.html" class="flex items-center gap-2 text-xs text-red-400 hover:text-red-600 font-bold uppercase">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
         </div>
     </aside>
 
     <main class="flex-1 flex flex-col relative blueprint-grid">
         <header class="h-16 bg-white/80 backdrop-blur-md flex items-center justify-between px-8 border-b border-gray-100">
             <div class="flex gap-4 text-xs font-bold uppercase tracking-tighter items-center">
-                <span class="text-gray-400">Modules ></span>
+                <a href="index.html" class="text-gray-400 hover:text-blue-900">Modules ></a>
                 <span class="text-blue-900">Isometric Projections</span>
             </div>
             <div class="flex items-center gap-4">
                 <div class="flex bg-gray-100 p-1 rounded-lg">
-                    <button class="bg-white shadow-sm px-4 py-1.5 rounded-md text-xs font-bold flex items-center gap-2"><i class="fas fa-pen text-blue-900"></i> Line Tool</button>
-                    <button class="px-4 py-1.5 text-xs text-gray-400 font-bold">Ellipse</button>
+                    <button class="bg-white shadow-sm px-4 py-1.5 rounded-md text-xs font-bold flex items-center gap-2">
+                        <i class="fas fa-pen text-blue-900"></i> Line Tool
+                    </button>
+                    <button class="px-4 py-1.5 text-xs text-gray-400 font-bold hover:text-blue-900">Ellipse</button>
                 </div>
-                <button class="bg-orange-800 text-white px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-2">
+                <a href="index.html" class="bg-orange-800 text-white px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-2 hover:bg-orange-900 transition">
                     <i class="fas fa-check-circle"></i> Finish Block
-                </button>
+                </a>
             </div>
         </header>
 
@@ -104,8 +119,10 @@
         </div>
 
         <div class="mt-auto relative">
-            <input type="text" placeholder="Ask about step projection..." class="w-full bg-white border border-gray-100 rounded-2xl py-4 pl-4 pr-12 text-xs shadow-inner">
-            <button class="absolute right-2 top-2 bg-blue-900 text-white w-8 h-8 rounded-xl flex items-center justify-center"><i class="fas fa-paper-plane text-xs"></i></button>
+            <input type="text" placeholder="Ask about step projection..." class="w-full bg-white border border-gray-100 rounded-2xl py-4 pl-4 pr-12 text-xs shadow-inner focus:outline-none focus:ring-1 ring-blue-500">
+            <button class="absolute right-2 top-2 bg-blue-900 text-white w-8 h-8 rounded-xl flex items-center justify-center hover:bg-blue-800 transition">
+                <i class="fas fa-paper-plane text-xs"></i>
+            </button>
         </div>
     </aside>
 </body>
